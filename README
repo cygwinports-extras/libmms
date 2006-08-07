@@ -1,0 +1,90 @@
+libmms
+------------------------------------------
+LibMMS is common library for parsing mms:// and mmsh:// type network
+streams. These are commonly used to stream Windows Media Video content
+over the web. LibMMS itself is only for receiving MMS stream, it
+doesn't handle sending at all.
+
+Runtime requirements:
+  cygwin-1.5.21-1
+  glib2-2.10.3-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.21-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6.1
+  binutils-20060709-1
+  cygport-0.2.5-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.81-1
+  pkg-config-0.20-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://sourceforge.net/projects/libmms/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/libmms/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libmms-0.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libmms-0.3-X.cygport all
+
+This will create:
+  /usr/src/libmms-0.3-X-src.tar.bz2
+  /usr/src/libmms-0.3-X.tar.bz2
+  /usr/src/libmms-devel-0.3-X.tar.bz2
+  /usr/src/libmms0-0.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/share/doc/libmms-0.2/AUTHORS
+  /usr/share/doc/libmms-0.2/ChangeLog
+  /usr/share/doc/libmms-0.2/COPYING.LIB
+  /usr/share/doc/libmms-0.2/INSTALL
+  /usr/share/doc/libmms-0.2/NEWS
+  /usr/share/doc/libmms-0.2/README
+  /usr/share/doc/libmms-0.2/README.LICENSE
+  /usr/share/doc/libmms-0.2/TODO
+
+Files included in the runtime library package:
+
+  /usr/bin/cygmms-0.dll
+
+Files included in the development package:
+
+  /usr/include/libmms/bswap.h
+  /usr/include/libmms/mms.h
+  /usr/include/libmms/mmsh.h
+  /usr/include/libmms/mmsio.h
+  /usr/lib/libmms.a
+  /usr/lib/libmms.dll.a
+  /usr/lib/libmms.la
+  /usr/lib/pkgconfig/libmms.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.3-1 -----
+Version bump, built with cygport.
+
+----- version 0.2-1 -----
+Version bump.
+
+----- version 0.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
