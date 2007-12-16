@@ -1,0 +1,11 @@
+DESCRIPTION="MMS stream parser library"
+HOMEPAGE="http://sourceforge.net/projects/libmms/"
+SRC_URI="mirror://sourceforge/libmms/${P}.tar.gz"
+
+DOCS="README.LICENSE"
+
+PKG_NAMES="${PN} ${PN}0 ${PN}-devel"
+PKG_HINTS="setup runtime devel"
+PKG_CONTENTS[0]='usr/share/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/'

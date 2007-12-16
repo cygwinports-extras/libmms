@@ -6,43 +6,43 @@ over the web. LibMMS itself is only for receiving MMS stream, it
 doesn't handle sending at all.
 
 Runtime requirements:
-  cygwin-1.5.21-1
-  glib2-2.10.3-1
+  cygwin-1.5.24-2
+  glib2-2.12.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-1
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6.1
-  binutils-20060709-1
-  cygport-0.2.5-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.10-1.10-1
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.81-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://sourceforge.net/projects/libmms/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/libmms/
+  http://downloads.sourceforge.net/libmms/
 
 -------------------------------------------
 
 Build instructions:
-  unpack libmms-0.3-X-src.tar.bz2
+  unpack libmms-0.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libmms-0.3-X.cygport all
+  cygport ./libmms-0.4-X.cygport all
 
 This will create:
-  /usr/src/libmms-0.3-X-src.tar.bz2
-  /usr/src/libmms-0.3-X.tar.bz2
-  /usr/src/libmms-devel-0.3-X.tar.bz2
-  /usr/src/libmms0-0.3-X.tar.bz2
+  /usr/src/libmms-0.4-X-src.tar.bz2
+  /usr/src/libmms-0.4-X.tar.bz2
+  /usr/src/libmms-devel-0.4-X.tar.bz2
+  /usr/src/libmms0-0.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -75,6 +75,9 @@ Files included in the development package:
 ------------------
 
 Port Notes:
+
+----- version 0.4-1 -----
+Version bump.
 
 ----- version 0.3-1 -----
 Version bump, built with cygport.
