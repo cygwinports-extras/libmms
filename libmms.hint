@@ -1,7 +1,5 @@
-category: Audio Video Libs
-requires: cygwin glib2
-external-source: libmms
-sdesc: "MMS stream parser library (runtime)"
+category: Audio Video
+sdesc: "MMS stream parser library (sources)"
 ldesc: "LibMMS is common library for parsing mms:// and mmsh:// type network
 streams. These are commonly used to stream Windows Media Video content
 over the web. LibMMS itself is only for receiving MMS stream, it

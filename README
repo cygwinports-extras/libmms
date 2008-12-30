@@ -6,21 +6,20 @@ over the web. LibMMS itself is only for receiving MMS stream, it
 doesn't handle sending at all.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.4-1
+  cygwin-1.5.25-15
+  libglib2.0_0-2.18.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-1
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -40,14 +39,15 @@ Build instructions:
 
 This will create:
   /usr/src/libmms-0.4-X-src.tar.bz2
-  /usr/src/libmms-0.4-X.tar.bz2
   /usr/src/libmms-devel-0.4-X.tar.bz2
   /usr/src/libmms0-0.4-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(libmms0)
+  /usr/bin/cygmms-0.dll
   /usr/share/doc/libmms-0.2/AUTHORS
   /usr/share/doc/libmms-0.2/ChangeLog
   /usr/share/doc/libmms-0.2/COPYING.LIB
@@ -57,12 +57,7 @@ Files included in the binary package:
   /usr/share/doc/libmms-0.2/README.LICENSE
   /usr/share/doc/libmms-0.2/TODO
 
-Files included in the runtime library package:
-
-  /usr/bin/cygmms-0.dll
-
-Files included in the development package:
-
+(libmms-devel)
   /usr/include/libmms/bswap.h
   /usr/include/libmms/mms.h
   /usr/include/libmms/mmsh.h
@@ -75,6 +70,9 @@ Files included in the development package:
 ------------------
 
 Port Notes:
+
+----- version 0.4-2 -----
+Rebuilt with Gentoo patches.
 
 ----- version 0.4-1 -----
 Version bump.
