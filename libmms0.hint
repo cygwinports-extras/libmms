@@ -1,5 +1,5 @@
 category: Audio Video
-requires: cygwin libglib2.0_0
+requires: libglib2.0_0
 external-source: libmms
 sdesc: "MMS stream parser library (runtime)"
 ldesc: "LibMMS is common library for parsing mms:// and mmsh:// type network
