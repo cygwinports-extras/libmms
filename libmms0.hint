@@ -1,5 +1,5 @@
 category: Audio Video
-requires: libglib2.0_0
+requires: libgcc1 libglib2.0_0
 external-source: libmms
 sdesc: "MMS stream parser library (runtime)"
 ldesc: "LibMMS is common library for parsing mms:// and mmsh:// type network
