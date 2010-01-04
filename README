@@ -6,70 +6,49 @@ over the web. LibMMS itself is only for receiving MMS stream, it
 doesn't handle sending at all.
 
 Runtime requirements:
-  cygwin-1.7.0-50
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.4-1
+  cygwin-1.7.1-1
+  libgcc1-4.3.4-3
+  libglib2.0_0-2.22.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
+  autoconf2.5-2.65-10
+  automake1.11-1.11.1-1
   binutils-2.19.51-1
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libtool-2.2.7a-13
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
-  http://sourceforge.net/projects/libmms/
+  http://launchpad.net/libmms/
 
 Canonical download:
-  http://downloads.sourceforge.net/libmms/
+  http://launchpad.net/libmms/+download
 
 -------------------------------------------
 
 Build instructions:
-  unpack libmms-0.4-X-src.tar.bz2
+  unpack libmms-0.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libmms-0.4-X.cygport all
+  cygport ./libmms-0.5-X.cygport all
 
 This will create:
-  /usr/src/libmms-0.4-X-src.tar.bz2
-  /usr/src/libmms-devel-0.4-X.tar.bz2
-  /usr/src/libmms0-0.4-X.tar.bz2
+  /usr/src/libmms-0.5-X-src.tar.bz2
+  /usr/src/libmms-devel-0.5-X.tar.bz2
+  /usr/src/libmms0-0.5-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libmms0)
-  /usr/bin/cygmms-0.dll
-  /usr/share/doc/libmms/AUTHORS
-  /usr/share/doc/libmms/ChangeLog
-  /usr/share/doc/libmms/COPYING.LIB
-  /usr/share/doc/libmms/NEWS
-  /usr/share/doc/libmms/README
-  /usr/share/doc/libmms/README.LICENSE
-  /usr/share/doc/libmms/TODO
-
-(libmms-devel)
-  /usr/include/libmms/bswap.h
-  /usr/include/libmms/mms.h
-  /usr/include/libmms/mmsh.h
-  /usr/include/libmms/mmsio.h
-  /usr/lib/libmms.a
-  /usr/lib/libmms.dll.a
-  /usr/lib/libmms.la
-  /usr/lib/pkgconfig/libmms.pc
-
-------------------
-
 Port Notes:
+
+----- version 0.5-1 -----
+Version bump.
 
 ----- version 0.4-10 -----
 Initial release for Cygwin 1.7.
