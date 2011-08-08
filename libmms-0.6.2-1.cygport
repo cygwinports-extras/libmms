@@ -1,7 +1,6 @@
 DESCRIPTION="MMS stream parser library"
-HOMEPAGE="http://launchpad.net/libmms/"
-SRC_URI="http://launchpad.net/libmms/trunk/${PV}/+download/${P}.tar.gz"
-PATCH_URI="mirror://portage/media-libs/${PN}/files/${P}-checkborders.patch"
+HOMEPAGE="http://sourceforge.net/projects/libmms/"
+SRC_URI="mirror://sourceforge/libmms/${P}.tar.gz"
 
 PKG_NAMES="${PN} ${PN}0 ${PN}-devel"
 libmms0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
