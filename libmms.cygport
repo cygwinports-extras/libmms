@@ -1,0 +1,17 @@
+NAME="libmms"
+VERSION=0.6.2
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="MMS stream parser library"
+DESCRIPTION="LibMMS is common library for parsing mms:// and mmsh:// type
+network streams. These are commonly used to stream Windows Media Video content
+over the web. LibMMS itself is only for receiving MMS stream, it doesn't
+handle sending at all."
+HOMEPAGE="http://sourceforge.net/projects/libmms/"
+SRC_URI="mirror://sourceforge/libmms/libmms-${VERSION}.tar.gz"
+
+PKG_NAMES="${NAME}0 ${NAME}-devel"
+libmms0_CONTENTS="usr/bin/*-0.dll usr/share/doc/"
+libmms_devel_CONTENTS='usr/include/ usr/lib/'
+
+DOCS="README.LICENSE"
