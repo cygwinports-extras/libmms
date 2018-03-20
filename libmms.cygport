@@ -1,5 +1,5 @@
 NAME="libmms"
-VERSION=0.6.2
+VERSION=0.6.4
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MMS stream parser library"
